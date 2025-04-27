@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
@@ -16,7 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
-import { Headphones, Earbud, Package } from "lucide-react";
+import { Headphones, Ear, Package } from "lucide-react";
 
 const sortOptions = [
   { value: "featured", label: "Featured" },
@@ -56,7 +55,7 @@ const ProductsPage = () => {
         break;
       case "earbuds":
         pageTitle = "Earbuds";
-        pageIcon = <Earbud className="mr-2" size={24} />;
+        pageIcon = <Ear className="mr-2" size={24} />;
         break;
       case "accessories":
         pageTitle = "Accessories";
